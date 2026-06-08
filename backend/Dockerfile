@@ -72,9 +72,9 @@ COPY --chown=appuser:appgroup ./app ./app
 COPY --chown=appuser:appgroup ./alembic.ini* ./
 COPY --chown=appuser:appgroup ./alembic* ./alembic/
 
-# Create directories for logs and exports
-RUN mkdir -p /app/logs /app/exports && \
-    chown -R appuser:appgroup /app/logs /app/exports
+# Create directories for logs, exports, and data
+RUN mkdir -p /app/logs /app/exports /app/data && \
+    chown -R appuser:appgroup /app/logs /app/exports /app/data
 
 # Switch to non-root user
 USER appuser
