@@ -42,8 +42,8 @@ header[data-testid="stHeader"] {
     background-color: transparent !important;
     z-index: 99999 !important;
 }
-header[data-testid="stHeader"] [data-testid="stHeaderContent"],
-header[data-testid="stHeader"] [data-testid="stDeployButton"] {
+header[data-testid="stHeader"] [data-testid="stDeployButton"],
+.stAppDeployButton {
     display: none !important;
 }
 
