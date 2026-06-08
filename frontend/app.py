@@ -207,6 +207,12 @@ def load_css():
         padding-right: 1.75rem;
         max-width: 100% !important;
     }
+    @media (max-width: 768px) {
+        .block-container {
+            padding-left: 0.75rem !important;
+            padding-right: 0.75rem !important;
+        }
+    }
 
     /* ───────────── SIDEBAR ───────────── */
     section[data-testid="stSidebar"] {

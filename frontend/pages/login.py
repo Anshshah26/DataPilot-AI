@@ -17,6 +17,16 @@ def show_login():
             border: 1px solid rgba(99, 102, 241, 0.2);
             margin-top: 4rem;
         }
+        @media (max-width: 768px) {
+            [data-testid="column"]:nth-of-type(2) {
+                padding: 2rem 1.25rem !important;
+                margin-top: 1rem !important;
+            }
+            [data-testid="column"]:nth-of-type(1),
+            [data-testid="column"]:nth-of-type(3) {
+                display: none !important;
+            }
+        }
         .login-logo-pill {
             display: flex;
             align-items: center;
